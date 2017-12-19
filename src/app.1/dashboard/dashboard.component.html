@@ -1,0 +1,29 @@
+<!-- <br>
+<input type="checkbox" [(ngModel)]="this.eventsBus.data.serviceA">serviceA
+<br>
+<input type="checkbox" [(ngModel)]="this.eventsBus.data.serviceB">serviceB
+<br>
+<input type="checkbox" [(ngModel)]="this.eventsBus.data.serviceC">serviceC
+<hr>
+service stream: {{this.eventsBus.data.serviceA ? 'A' : ''}} {{this.eventsBus.data.serviceB ? 'B' : ''}} {{this.eventsBus.data.serviceC ? 'C' : ''}} -->
+<!-- <button (click)="changeSearchServe()">searchServe:{{data.searchServe}}</button>
+<button (click)="changeheroesServe()">searchServe:{{data.heroesServe}}</button> -->
+
+<div>
+    <h3>PPM</h3>
+    <div class="grid grid-pad">
+    
+        <a *ngFor="let hero of heroes" [routerLink]="['/detail', hero.id]" class="col-1-4">
+            <div class="module hero">
+                <h4>{{hero.name}}</h4>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<!-- 
+Copyright 2017 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

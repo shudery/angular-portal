@@ -1,0 +1,10 @@
+<p class="service">Service C:</p>
+<div *ngIf=this.eventsBus.data.serviceC id="search-component">
+  <h4>Heroes Search</h4>
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" [placeholder]="this.eventsBus.data.serviceA ? 'data from A:'+heroId : 'no open A'"/>
+  <div *ngIf="searchView" id="search-result">
+    <div *ngFor="let hero of heroes | async" (click)="gotoDetail(hero)" class="search-result" >
+      {{hero.name}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+
+<div *ngIf="hero">
+    <h2>{{hero.name}} details!</h2>
+    <p class="service">Service A:</p>
+    <div *ngIf="eventsBus.data.serviceA">
+        <label>id: </label>{{hero.id}}
+        <label>name: </label>
+        <input [(ngModel)]="hero.name" placeholder="name" />
+    </div>
+    <p class="service">Service B:</p>
+    <div *ngIf="eventsBus.data.serviceB">
+        <button (click)="goBack()">Back</button>
+        <button (click)="save()">Save</button> {{eventsBus.data.serviceA ? '' : 'you need open service A!'}}
+    </div>
+    <!-- <hero-search [display]=eventsBus.data.serviceC></hero-search> -->
+    <hero-search [heroId]='hero.id'></hero-search>
+</div>
+
+
+<!-- 
+Copyright 2017 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

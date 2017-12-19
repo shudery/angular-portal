@@ -1,0 +1,31 @@
+<div id="body">
+    <ul nz-menu [nzMode]="'horizontal'">
+        <li nz-menu-item>
+            <i class="anticon anticon-mail"></i> Navigation One</li>
+        <li nz-menu-item nzDisabled>
+            <i class="anticon anticon-appstore"></i> Navigation Two</li>
+        <li nz-menu-item>
+            <i class="anticon anticon-setting"></i> Navigation Three - Submenu</li>
+        <li nz-menu-item>
+            <a href="https://ng.ant.design" target="_blank" rel="noopener noreferrer">Navigation Four - Link</a>
+        </li>
+    </ul>
+</div>
+
+<!-- <div id="body">
+    <h1>{{title}}</h1>
+    
+    <nav>
+        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+        <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+    </nav>
+    <br>
+    <input type="checkbox" [(ngModel)]="this.eventsBus.data.serviceA">serviceA
+    <br>
+    <input type="checkbox" [(ngModel)]="this.eventsBus.data.serviceB">serviceB
+    <br>
+    <input type="checkbox" [(ngModel)]="this.eventsBus.data.serviceC">serviceC
+    <hr> service stream: {{this.eventsBus.data.serviceA ? 'A' : ''}} {{this.eventsBus.data.serviceB ? 'B' : ''}} {{this.eventsBus.data.serviceC
+    ? 'C' : ''}}
+    <router-outlet></router-outlet>
+</div> -->

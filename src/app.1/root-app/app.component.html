@@ -1,0 +1,14 @@
+<nav>
+    <h1>{{title}}</h1>
+    <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+    <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+</nav>
+<br>
+<input type="checkbox" [(ngModel)]="this.eventsBus.data.serviceA">serviceA
+<br>
+<input type="checkbox" [(ngModel)]="this.eventsBus.data.serviceB">serviceB
+<br>
+<input type="checkbox" [(ngModel)]="this.eventsBus.data.serviceC">serviceC
+<hr> service stream: {{this.eventsBus.data.serviceA ? 'A' : ''}} {{this.eventsBus.data.serviceB ? 'B' : ''}} {{this.eventsBus.data.serviceC
+? 'C' : ''}}
+<router-outlet></router-outlet>
